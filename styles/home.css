@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.headerbar{
+    display: none;
+}
+
+.searchicon{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+}
+.bar{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 7vw;
+    background-color: black;
+    /* border-bottom: 2px solid rgb(173, 169, 169);
+    box-shadow: 0 2px 20px rgb(138, 134, 134) ; */
+}
+.header ul{
+    display: flex;
+    align-items: center;
+}
+.header ul li:hover{
+    color: red;
+}
+.nav ul li{
+    padding: 0 15px;  
+    font-size: 15px;
+    font-weight: bold; 
+    font-family: 'Poppins', sans-serif;
+}
+.account{
+    flex: 0.1;
+}
+.account ul{
+    display: flex ;
+    justify-content: end;
+}
+.account ul li{
+    padding: 0 15px;
+    font-size: 20px;
+}
+.account i:hover{
+    color: red;
+}
+.bar i:hover{
+    color: red;
+    cursor: pointer;
+}
+.search{
+    display: none;
+    width: 200px;
+    justify-content: center;
+}
+.search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.srchicon{
+    color: black;
+    background-color: rgb(221, 1, 1);
+    display: block;
+    padding: 4px 4px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px){
+    .header .nav,.header .account{
+        display: none;
+    }
+    .search{
+        width: 60vw;
+    }
+    .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    .headerbar{
+        overflow:hidden ;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom:0;
+        width: 100%;
+        right: -100%;
+    }
+
+    .headerbar .account, .headerbar .nav{
+        display: block;
+        font-size: 20px;
+    }
+
+    .bar .fa-xmark{
+        display: none;
+        top: 20px;
+        right: 5w;
+        position: absolute;
+        font-size: 25px;
+    }
+
+    .headerbar .nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: center ;
+    }
+
+    .headerbar .nav li{
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 15px;
+        /* box-shadow: 0 2px 15px rgb(96, 96, 96);
+        font-size: 15px; */
+        margin-top: 5px;
+    }
+
+    .headerbar .account{
+        line-height: 40px;
+        margin-top: 60px;
+        padding: 15px;
+        /* background-color: rgb(96, 96, 96); */
+    }
+
+    .headerbar .account ul{
+        justify-content: space-between;
+    }
+    
+    
+}
