@@ -32,8 +32,8 @@
     height: 80px;
     padding: 0 7vw;
     background-color: black;
-    /* border-bottom: 2px solid rgb(173, 169, 169);
-    box-shadow: 0 2px 20px rgb(138, 134, 134) ; */
+    border-bottom: 2px solid rgb(75, 73, 73);
+    /* box-shadow: 0 2px 20px rgb(138, 134, 134) ; */ 
 }
 .header ul{
     display: flex;
@@ -84,7 +84,9 @@
     padding: 4px 4px;
     cursor: pointer;
 }
-
+.srchicon:hover{
+    background-color: rgb(104, 102, 102);
+}
 
 @media only screen and (max-width: 768px){
     .header .nav,.header .account{
@@ -107,6 +109,7 @@
         bottom:0;
         width: 100%;
         right: -100%;
+        transition: 0.s all;
     }
 
     .headerbar .account, .headerbar .nav{
