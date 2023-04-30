@@ -105,13 +105,18 @@
     padding-bottom: 10px;
     align-items: center;
 }
+.main_slide div:nth-child(2) img{
+    width: 663px;
+    height: 947px;
+}
 .main_slide div:nth-child(1){
     padding-top: 20px;
     flex: 1;
     font-size: 30px;
 }
+
 .main_slide div:nth-child(1) p{
-    font-size: 13px;
+    font-size: 18px;
     padding: 20px 0;
 }
 .main_slide div:nth-child(1) span{
@@ -119,6 +124,7 @@
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-color: rgb(56, 4, 4);
+    background-color: transparent;
 }
 .red_btn{
     cursor: pointer;
@@ -238,5 +244,6 @@
 
     .main_slide div:nth-child(2) img{
         width: 70vw;
+        height: 70vh;
     }
 }
