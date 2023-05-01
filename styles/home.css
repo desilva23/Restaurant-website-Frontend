@@ -153,6 +153,70 @@
 .red_btn:hover i{
     color: black;
 }
+
+.food-items{
+    margin: 70px 0;
+    padding: 20px 0;
+    border-radius: 30px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+.food-items .item{
+    background-color: white;
+    color: black;
+}
+.food-items h3,#para{
+    background-color:white;
+    color: black;
+}
+
+.item div{
+    height: 160px;
+}
+.item img{
+    width: 160px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.item p{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.black_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 160px;
+    font-weight:bold;
+    color: red;
+    line-height: 50px;
+    border: 1px solid red;
+    background-color: rgb(240, 238, 238);
+    border-radius: 5px;
+    box-shadow: 0 0 50px red;
+    transition: all 0.2s;
+}
+.black_btn:hover{
+    color: black;
+    background-color: red;
+    box-shadow: 0 2px 15px red;
+    transition:  all 0.2s;
+    border: 1px solid red;
+}
+
+.item .red_btn,.item .black_btn{
+    width: 120px;
+    line-height: 35px;
+}
+
 @media only screen and (max-width: 768px){
     .header .nav,.header .account{
         display: none;
