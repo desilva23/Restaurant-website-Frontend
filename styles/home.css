@@ -117,6 +117,7 @@
 
 .main_slide div:nth-child(1) p{
     font-size: 18px;
+    margin-top:10px;
     padding: 20px 0;
 }
 .main_slide div:nth-child(1) span{
@@ -217,6 +218,56 @@
     line-height: 35px;
 }
 
+.main_slide2{
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodimages{
+    flex: 0.5;
+}
+
+.foodimages img{
+    max-width: 500px;
+    width: 45vw;
+}
+.question{
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 40px;
+    
+}
+.question h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    
+}
+.q-ans{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.question img,h4,p{
+    background-color: white;
+    color: black;
+    
+}
+.q-ans img{
+    width:45px;
+}
+
+.q-ans div:first-child{
+     padding: 10px;
+     border-radius: 50%;
+     height: 65px;
+     text-align: center;
+     background-color: white;
+     margin-right: 20px ;
+}
 @media only screen and (max-width: 768px){
     .header .nav,.header .account{
         display: none;
